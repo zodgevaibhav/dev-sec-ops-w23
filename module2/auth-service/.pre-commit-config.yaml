@@ -8,3 +8,8 @@ repos:
      - id: pretty-format-java
        args: [--autofix, --google-java-formatter-version=1.21.0]
 
+ - repo: https://github.com/zodgevaibhav/pre-commit-hooks
+   rev: main
+   hooks:
+     - id: check_commit_type_scope
+       stages: [commit-msg]
